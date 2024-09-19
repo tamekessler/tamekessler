@@ -1,4 +1,9 @@
-- /////////// Recoil Control Settings  /////////
+
+
+
+
+
+
  
 -- //// SMG == GUNS WITH LOW RECOIL AND WILL RAPID FIRE FAST 
 -- //// AR == GUNS WITH HIGH RECOIL AND WILL RAPID FIRE SLOW
@@ -15,13 +20,13 @@
 -- //////////////////////////////////////// RECOIL COMPENSATION SETTINGS -- ////////////////////////////////////////////////
  
  
-SMGRecoilMouseMoveAmount    = 8  --           // distance the mousewill move down for recoil compensation NO decimals
-ARRecoilMouseMoveAmount     = 10 --           // MORE == Pulls Mouse down more. 1 mousemove==100 DelaySleep
+SMGRecoilMouseMoveAmount    = -1  --           // distance the mousewill move down for recoil compensation NO decimals
+ARRecoilMouseMoveAmount     = -1 --           // MORE == Pulls Mouse down more. 1 mousemove==100 DelaySleep
  
-SMGMouseMoveDelaySleep      = 8  --           // Delay in miliseconds between each time RecoilMouseMoveAmount
-ARMouseMoveDelaySleep       = 8  --           //  More==less mouse pull down, 1 mousemove==100 DelaySleep
+SMGMouseMoveDelaySleep      = 1 --           // Delay in miliseconds between each time RecoilMouseMoveAmount
+ARMouseMoveDelaySleep       = 1  --           //  More==less mouse pull down, 1 mousemove==100 DelaySleep
  
-HorizontalRecoilModifier    = 0  --           // -1 pulls the mouse to the left slightly when firing for compensation
+HorizontalRecoilModifier    = -1  --           // -1 pulls the mouse to the left slightly when firing for compensation
 --                                            // If your recoil moves right, try 1. 0==dont move left or right
  
 -- //////////////////////////////////////// RAPID FIRE SETTINGS -- ////////////////////////////////////////////////
@@ -52,8 +57,8 @@ RapidFireButton = 5 --       https://i.imgur.com/WinEVPi.png list of logitech mo
  
 -- //////////////////////////////////////// ONLY LUA CODERS TOUCH BELOW -- ////////////////////////////////////////////////
  
-RapidFireSleepMin = 0
-RapidFireSleepMax = 0
+RapidFireSleepMin = -1
+RapidFireSleepMax = -1
 MouseMove = 0
 NRMin = 0
 NRMax = 0
@@ -206,8 +211,3 @@ en
 - 
 -  
 -
-
-
-
-
-
