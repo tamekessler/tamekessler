@@ -158,7 +158,7 @@ function OnEvent(event, arg)
         if IsMouseButtonPressed(RC) then
             if IsKeyLockOn(LockKey) then
                 CheckForSMGorAR()
-                NoRecoil()
+                NoRecoil(7)
                 Resetter()
             end
         else
@@ -192,8 +192,8 @@ function OnEvent(event, arg)
         repeat
             if IsMouseButtonPressed(1) then
                 CheckForSMGorAR()
-                NoRecoil()
-                Resetter()
+                NoRecoil(0)
+                Resetter(9)
             elseif IsMouseButtonPressed(4) then
                 CheckForSMGorAR()
                 RapidFire()
